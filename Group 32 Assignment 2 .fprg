@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 10:40:42 AM"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTE3OzA2OjQ2OjE3IFBNOzI5MTY="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTI1OzEwOjQwOjQyIEFNOzI7Mjk5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N, i, fact" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter an integer&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="fact" expression="1"/>
+            <assign variable="i" expression="1"/>
+            <if expression="i &lt;= N">
+                <then>
+                    <for variable="i" start="1" end="N" direction="inc" step="1">
+                        <assign variable="fact" expression="fact * i"/>
+                    </for>
+                </then>
+                <else>
+                    <assign variable="fact" expression="1"/>
+                </else>
+            </if>
+            <output expression="&quot;Factorial = &quot; &amp; fact" newline="True"/>
+            <comment text="&quot;GROUP 32 MEMBERS&quot;&#13;&#10;&quot;1. ANOKYE ERNEST - 8598821&quot;&#13;&#10;&quot;2. DOWOUNA NII NOI BENJAMIN - 8602721&quot;&#13;&#10;&quot;3. OFOSU YEBOAH PRINCE - 8607321&quot;&#13;&#10;&quot;4. ABUBAKAR ANAS - 8596221&quot;"/>
+        </body>
+    </function>
+</flowgorithm>

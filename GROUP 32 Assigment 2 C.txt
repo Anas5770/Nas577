@@ -1,0 +1,19 @@
+Enter an integer
+6
+Factorial = 720
+
+Enter an integer
+8
+Factorial = 40320
+
+
+
+
+
+
+GROUP 32 MEMBERS
+1. ANOKYE ERNEST - 8598821
+2. DOWOUNA NII NOI BENJAMIN - 8602721
+3. OFOSU YEBOAH PRINCE - 8607321
+4. ABUBAKAR ANAS - 8596221
+
