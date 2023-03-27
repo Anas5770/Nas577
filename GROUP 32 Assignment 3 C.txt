@@ -1,0 +1,36 @@
+What is the class size?
+10
+Enter your Data
+10
+Enter your Data
+20
+Enter your Data
+30
+Enter your Data
+40
+Enter your Data
+50
+Enter your Data
+60
+Enter your Data
+70
+Enter your Data
+80
+Enter your Data
+90
+Enter your Data
+100
+Number of Dataset = 10Arithmetic Mean = 55Geometric Mean = 45.2872868811677Harmonic Mean = 0.0292896825396825
+
+
+
+
+
+
+GROUP 32 MEMBERS
+1. ANOKYE ERNEST - 8598821
+2. DOWOUNA NII NOI BENJAMIN - 8602721
+3. OFOSU YEBOAH PRINCE - 8607321
+4. ABUBAKAR ANAS - 8596221
+
+

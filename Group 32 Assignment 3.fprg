@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="Arithmetic, Geometric, Harmonic Mean"/>
+        <attribute name="authors" value="ABUBAKAR, Anas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 10:40:22 AM"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTE0OzExOjI2OjQwIEFNOzI4ODg="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTI1OzEwOjQwOjIyIEFNOzIxOzMwNDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="k, N" type="Integer" array="False" size=""/>
+            <declare name="harmonicMean, geometricMean, arithmeticMean, dataSet, totN1, totN2, totN3" type="Real" array="False" size=""/>
+            <output expression="&quot;What is the class size?&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="totN1" expression="0"/>
+            <assign variable="totN2" expression="1"/>
+            <assign variable="totN3" expression="0"/>
+            <for variable="k" start="1" end="N" direction="inc" step="1">
+                <output expression="&quot;Enter your Data&quot;" newline="True"/>
+                <input variable="dataSet"/>
+                <assign variable="totN1" expression="totN1 + dataSet"/>
+                <assign variable="totN2" expression="totN2 * dataSet"/>
+                <assign variable="totN3" expression="totN3 + 1/dataSet"/>
+            </for>
+            <if expression="N == 0">
+                <then>
+                    <assign variable="arithmeticMean" expression="0"/>
+                    <assign variable="geometricMean" expression="0"/>
+                    <assign variable="harmonicMean" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="arithmeticMean" expression="totN1/N"/>
+                    <assign variable="geometricMean" expression="(totN2) ^(1/N)"/>
+                    <assign variable="harmonicMean" expression="totN3 / N"/>
+                </else>
+            </if>
+            <output expression="&quot;Number of Dataset = &quot; &amp; N &amp; ToChar(13) &amp; &quot;Arithmetic Mean = &quot; &amp; arithmeticMean &amp; ToChar(13) &amp; &quot;Geometric Mean = &quot; &amp; geometricMean &amp;ToChar(13) &amp; &quot;Harmonic Mean = &quot; &amp; harmonicMean" newline="True"/>
+            <comment text="&quot;GROUP 32 MEMBERS&quot;&#13;&#10;&quot;1. ANOKYE ERNEST - 8598821&quot;&#13;&#10;&quot;2. DOWOUNA NII NOI BENJAMIN - 8602721&quot;&#13;&#10;&quot;3. OFOSU YEBOAH PRINCE - 8607321&quot;&#13;&#10;&quot;4. ABUBAKAR ANAS - 8596221&quot;"/>
+        </body>
+    </function>
+</flowgorithm>
