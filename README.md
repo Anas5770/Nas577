@@ -1,6 +1,6 @@
 - 👋 Hi, I’m ANAS
 - 👀 I’m interested in coding
-- 🌱 I’m currently learning CSS
+- 🌱 I’m currently learning CSS,R,Matlab,Python,C++
 - 💞️ I’m looking to collaborate on web development and software development
 - 📫 How to reach me : Email: abubakaranas5770@gmail.com /WhatsApp: +233 561828955
 
