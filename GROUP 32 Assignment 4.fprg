@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Lenovo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-26 05:54:40 AM"/>
+        <attribute name="created" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTE0OzExOjI2OjQwIEFNOzI4ODg="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTI2OzA1OjQxOjE4IEFNOzU7QVNVUztERVNLVE9QLUUyUUFDTVY7MjAyMy0wMy0yNTsxMjowMjo0MSBQTTtBU1NJR05NRU5UIDQuZnByZzs3MTEz"/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTI2OzA1OjU0OjQwIEFNOzEzOzMwNTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="&quot;&#13;&#10;GROUP 32 MEMBERS&#13;&#10;1. ANOKYE ERNEST - 8598821&#13;&#10;2. DOWOUNA NII NOI BENJAMIN - 8602721&#13;&#10;3. OFOSU YEBOAH PRINCE - 8607321&#13;&#10;4. ABUBAKAR ANAS - 8596221&#13;&#10;&quot;"/>
+            <declare name="k, nStds, nPass, nTrail" type="Integer" array="False" size=""/>
+            <declare name="stdMark, passMark, sumTrail, sumPass, minTrail, maxTrail, minPass, maxPass, meanTrail, meanPass" type="Real" array="False" size=""/>
+            <declare name="initTrail, initPass" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter the number of students&quot;" newline="True"/>
+            <input variable="nStds"/>
+            <assign variable="passMark" expression="40"/>
+            <assign variable="nPass" expression="0"/>
+            <assign variable="nTrail" expression="0"/>
+            <assign variable="sumTrail" expression="0"/>
+            <assign variable="sumPass" expression="0"/>
+            <assign variable="initTrail" expression="False"/>
+            <assign variable="initPass" expression="False"/>
+            <for variable="k" start="1" end="nStds" direction="inc" step="1">
+                <output expression="&quot; Enter Exam score?&quot;" newline="True"/>
+                <input variable="stdMark"/>
+                <if expression="stdMark &gt;= passMark">
+                    <then>
+                        <assign variable="nPass" expression="nPass +1"/>
+                        <assign variable="sumPass" expression="sumPass + stdMark"/>
+                        <if expression="initPass == False">
+                            <then>
+                                <assign variable="minPass" expression="stdMark"/>
+                                <assign variable="maxPass" expression="stdMark"/>
+                                <assign variable="initPass" expression="True"/>
+                            </then>
+                            <else>
+                                <if expression="stdMark &gt;= maxPass">
+                                    <then>
+                                        <assign variable="maxPass" expression="stdMark"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="stdMark &lt;= minPass">
+                                    <then>
+                                        <assign variable="minPass" expression="stdMark"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="nTrail" expression="nTrail +1"/>
+                        <assign variable="sumTrail" expression="sumTrail + stdMark"/>
+                        <if expression="initTrail == True">
+                            <then>
+                                <if expression="stdMark &gt;= maxTrail">
+                                    <then>
+                                        <assign variable="maxTrail" expression="stdMark"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                                <if expression="stdMark &lt;= minTrail">
+                                    <then>
+                                        <assign variable="minTrail" expression="stdMark"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else>
+                                <assign variable="minTrail" expression="stdMark"/>
+                                <assign variable="maxTrail" expression="stdMark"/>
+                                <assign variable="initTrail" expression="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <if expression="nPass != 0 &amp;&amp; nTrail != 0">
+                <then>
+                    <assign variable="meanPass" expression="sumPass/nPass"/>
+                    <assign variable="meanTrail" expression="sumTrail/nTrail"/>
+                    <output expression="&quot;Class Size: &quot;&amp;nStds&amp;toChar(13)&amp; &quot;Number of Passes: &quot;&amp;nPass&amp;toChar(13)&amp;&quot;Number of Trails: &quot;&amp;nTrail&amp;toChar(13)&amp;&quot;MIn/Max Trail Score: &quot;&amp; minTrail&amp;&quot;/&quot;&amp;maxTrail&amp; toChar(13)&amp;&quot;MIn/Max Pass Score: &quot;&amp;minPass&amp;&quot;/&quot;&amp;maxPass&amp; toChar(13)&amp;&quot;Mean Pass Mark: &quot;&amp;meanPass&amp; toChar(13)&amp;&quot;Mean Trail Mark: &quot;&amp;meanTrail" newline="True"/>
+                </then>
+                <else>
+                    <if expression="nPass != 0">
+                        <then>
+                            <assign variable="meanPass" expression="sumPass/nPass"/>
+                            <output expression="&quot;Class Size: &quot;&amp;nStds&amp;toChar(13)&amp; &quot;Number of Passes: &quot;&amp;nPass&amp;toChar(13)&amp;&quot;Number of Trails: &quot;&amp;nTrail&amp;toChar(13)&amp;&quot;MIn/Max Trail Score: &quot;&amp; &quot;Not Applicable.&quot;&amp; toChar(13)&amp;&quot;MIn/Max Pass Score: &quot;&amp;minPass&amp;&quot;/&quot;&amp;maxPass&amp; toChar(13)&amp;&quot;Mean Pass Mark: &quot;&amp;meanPass&amp; toChar(13)&amp;&quot;Mean Trail Mark: &quot;&amp; &quot;Not Applicable&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="meanTrail" expression="sumTrail/nTrail"/>
+                            <output expression="&quot;Class Size: &quot;&amp;nStds&amp;toChar(13)&amp; &quot;Number of Passes: &quot;&amp;nPass&amp;toChar(13)&amp;&quot;Number of Trails: &quot;&amp;nTrail&amp;toChar(13)&amp;&quot;MIn/Max Trail Score: &quot;&amp; minTrail&amp;&quot;/&quot;&amp;maxTrail&amp; toChar(13)&amp;&quot;MIn/Max Pass Score: &quot;&amp; &quot;Not Applicable&quot;&amp; toChar(13)&amp;&quot;Mean Pass Mark: &quot;&amp;&quot;Not Applicable&quot;&amp; toChar(13)&amp;&quot;Mean Trail Mark: &quot;&amp;meanTrail" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

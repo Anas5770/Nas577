@@ -1,0 +1,34 @@
+Enter the number of students
+10
+ Enter Exam score?
+67
+ Enter Exam score?
+34
+ Enter Exam score?
+58
+ Enter Exam score?
+77
+ Enter Exam score?
+82
+ Enter Exam score?
+30
+ Enter Exam score?
+46
+ Enter Exam score?
+61
+ Enter Exam score?
+29
+ Enter Exam score?
+70
+Class Size: 10Number of Passes: 7Number of Trails: 3MIn/Max Trail Score: 29/34MIn/Max Pass Score: 46/82Mean Pass Mark: 65.8571428571429Mean Trail Mark: 31
+
+
+
+
+
+GROUP 32 MEMBERS
+1. ANOKYE ERNEST - 8598821
+2. DOWOUNA NII NOI BENJAMIN - 8602721
+3. OFOSU YEBOAH PRINCE - 8607321
+4. ABUBAKAR ANAS - 8596221
+
