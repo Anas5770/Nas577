@@ -1,0 +1,36 @@
+Enter the Dataset Size
+10
+Enter the Dataset
+65
+Enter the Dataset
+85
+Enter the Dataset
+75
+Enter the Dataset
+35
+Enter the Dataset
+95
+Enter the Dataset
+90
+Enter the Dataset
+55
+Enter the Dataset
+25
+Enter the Dataset
+14
+Enter the Dataset
+78
+ 
+14 ,25 ,35 ,55 ,65 ,75 ,78 ,85 ,90 ,95 , 
+Maximum = 95Minimum = 14Range = 81
+
+
+
+
+
+GROUP 32 MEMBERS
+1. ANOKYE ERNEST - 8598821
+2. DOWOUNA NII NOI BENJAMIN - 8602721
+3. OFOSU YEBOAH PRINCE - 8607321
+4. ABUBAKAR ANAS - 8596221
+

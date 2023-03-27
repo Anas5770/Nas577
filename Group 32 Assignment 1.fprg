@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value="Range of a dataset"/>
+        <attribute name="authors" value="ABUBAKAR, Anas"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-25 10:40:55 AM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUhJREs5Ukg7MjAxOS0xMi0xNzsxMTo1Mjo1MSBQTTsyNzc5"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUhJREs5Ukg7MjAxOS0xMi0yMDswMjoyNDoxNyBQTTsyOzI4ODM="/>
+        <attribute name="edited" value="TGVub3ZvO0RFU0tUT1AtTjAxSUUxNjsyMDIzLTAzLTI1OzEwOjQwOjU1IEFNOzEzOzMwNTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, temp, N, data, min, max, range" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the Dataset Size&quot;" newline="True"/>
+            <input variable="N"/>
+            <declare name="array" type="Integer" array="True" size="N"/>
+            <for variable="i" start="0" end="size(array)-1" direction="inc" step="1">
+                <output expression="&quot;Enter the Dataset&quot;" newline="True"/>
+                <input variable="data"/>
+                <assign variable="array[i]" expression="data"/>
+            </for>
+            <for variable="i" start="0" end="size(array)-1" direction="inc" step="1">
+                <for variable="j" start="i" end="size(array)-1" direction="inc" step="1">
+                    <if expression="array[i]&gt;array[j]">
+                        <then>
+                            <assign variable="temp" expression="array[i]"/>
+                            <assign variable="array[i]" expression="array[j]"/>
+                            <assign variable="array[j]" expression="temp"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="size(array)-1" direction="inc" step="1">
+                <output expression="array[i] &amp; &quot; ,&quot;" newline="False"/>
+            </for>
+            <output expression="&quot; &quot;" newline="True"/>
+            <assign variable="max" expression="array[N-1]"/>
+            <assign variable="min" expression="array[0]"/>
+            <assign variable="range" expression="max - min"/>
+            <output expression="&quot;Dataset Size = &quot; &amp; N &amp; ToChar(13) &amp; &quot;Maximum = &quot; &amp; max &amp;  ToChar(13) &amp; &quot;Minimum = &quot; &amp; min &amp; ToChar(13) &amp; &quot;Range = &quot; &amp; range" newline="True"/>
+            <comment text="&quot;GROUP 32 MEMBERS&quot;&#13;&#10;&quot;1. ANOKYE ERNEST - 8598821&quot;&#13;&#10;&quot;2. DOWOUNA NII NOI BENJAMIN - 8602721&quot;&#13;&#10;&quot;3. OFOSU YEBOAH PRINCE - 8607321&quot;&#13;&#10;&quot;4. ABUBAKAR ANAS - 8596221&quot;"/>
+        </body>
+    </function>
+</flowgorithm>
