@@ -1,0 +1,378 @@
+* {
+    box-sizing: border-box;  
+    margin: 0;  
+}
+
+
+body {
+    color: black;
+    height: auto;
+    margin: 0;
+    color: white;
+    background: rgba(0,0,0,0.7) url(IMG_20220613_064444_526.jpg) no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: hsl(62, 100%, 26%);
+    height: 10vh;
+}
+/**
+#navBar:hover{
+    border: 2px solid white;
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+}**/
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-style: bold;
+}
+
+p::first-letter{
+    color: blue;
+    text-decoration: solid;
+    font-style: normal;
+    font-size: 1.5em;
+
+}
+
+.links {
+    width: 33.3vw;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.links a:hover {
+    border: 2px solid white;
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    text-decoration: none;
+}
+
+.btn1 {
+    color: hsl(62, 100%, 26%);
+    background-color: white;
+    padding: 5px 15px;
+    border: 2px solid hsl(62, 100%, 26%);
+    border-radius: 8px;
+    font-size: 15px;
+    transition-property: border,background-color,color;
+    transition-duration: .5s;
+}
+
+.btn1:hover {
+    border: 2px solid white;
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+}
+
+#area {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+#register{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    border: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+}
+
+.hmm {
+    display: inline-block!important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    font-size: 15px;
+    padding: 0px 0px;
+    border-radius: 5px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    border-spacing: 10px;
+}
+
+
+
+#login {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.add {
+    font-size: 30px;
+    padding: 0px;
+    font-style: bold;
+    text-decoration: wavy;
+    color: blue;
+}
+
+
+.hi {
+    font-size: 55px;
+    padding: 0px;
+    font-style: bold;
+    text-decoration: wavy;
+    color: blue;
+}
+
+#area p {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+  
+}
+
+.p1 {
+    padding: 0px;
+    font-size: 15px;
+    
+
+}
+
+.btn2 {
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    
+}
+
+.btn3 {
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    
+}
+
+.btn4 {
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    
+}
+
+.btn7 {
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    
+}
+
+
+.btn5 {
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+  
+    
+}
+.hmm.btn5 {
+    padding-right: 25px;
+}
+
+.btn2:hover {
+    background-color: white;
+    color: hsl(62, 100%, 26%);
+}
+
+
+.btn3:hover {
+    background-color: white;
+    color: hsl(62, 100%, 26%);
+}
+
+.btn4:hover {
+    background-color: white;
+    color: hsl(62, 100%, 26%);
+}
+
+
+.btn5:hover {
+    background-color: white;
+    color: hsl(62, 100%, 26%);
+}
+
+footer {
+    background-color: hsl(62, 100%, 26%);
+    text-align: center;
+}
+
+footer p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: hsl(62, 100%, 26%);
+    height: 10vh;
+    margin-bottom: 0px;
+    padding: 0px 0px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+footer p a,
+footer p a:hover {
+    color: #f5a425;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: hsl(62, 100%, 26%);
+    height: 10vh;
+}
+
+
+input {
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    
+}
+
+/*
+input:hover {
+    color: hsl(62, 100%, 26%);
+    background-color: white;
+
+}*/
+/*
+a:hover {
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: hsl(62, 100%, 26%)
+    
+} */
+
+.btn6 {
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    
+}
+.btn7:hover {
+    border: 2px solid white;
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+}
+
+.btn6:hover {
+    border: 2px solid white;
+    background-color: hsl(62, 100%, 26%);
+    color: white;
+}
+
+form {
+    display: inline-block;
+    border-style: groove;
+    padding: 0px;
+    border-radius: 6px;
+    border-width: 2.5px;
+    width: 600px;
+    height: 5000px;
+    border-color: hsl(60, 90%, 26%);
+}
+
+h1 {
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.new {
+    text-decoration: underline rosybrown;
+
+}
+
+.new::first-letter {
+    color: blue;
+    font-size: 2em;
+}
+
+
+.level , .program ,.gender , .DOB , .occupation
+{
+    background-color: hsl(160, 87%, 45%);
+    color: white;
+    border: none;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+}
+
+
+.father {
+    text-decoration: underline;
+}
+
+
+.fill {
+    visibility: hidden;
+}
